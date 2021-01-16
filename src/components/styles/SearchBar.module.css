@@ -1,0 +1,33 @@
+.searchForm {
+    align-self: flex-end;
+    display: flex;
+}
+
+.searchInput {
+    border: 0.1rem #c0c0c0 solid;
+    margin: 0.2rem;
+    height: 2.2rem;
+    border-radius: 0.4rem;
+}
+
+.searchInput:hover {
+    border: 0.1rem #696969 solid;
+}
+
+.searchButton {
+    background-color: white;
+    color: black;
+    border:  0.1rem #c0c0c0 solid;
+    font-size: 1.8rem;
+    margin: 0.2rem;
+    height: 2.2rem;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchButton:hover {
+    box-shadow: 0.1rem 0.15rem rgb(85, 84, 85);
+}
+

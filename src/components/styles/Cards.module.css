@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background: linear-gradient(150deg, #acebc4, #779c96, #c1e7a1); */
+    z-index: 10;
+    height: 100%;
+}

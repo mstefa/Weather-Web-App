@@ -1,0 +1,74 @@
+.card{
+    max-width: 20rem;
+    border-radius: 0.5rem;
+    border: 0.05rem rgb(165, 163, 163) solid;
+    margin: 1rem;
+    background: linear-gradient(150deg, #acc2eb,  #77819c, #dca1e7);
+    background-size: 400% 300%;
+    animation: BgGradient 10s ease infinite;
+    z-index: 10;
+
+}
+
+@keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+}
+
+.card:hover{
+    /* background-color: rosybrown; */
+    box-shadow: 0.2rem 0.3rem rgba(48, 4, 70, 0.336);
+    border: 0.05rem rgb(77, 77, 77) solid;
+}
+
+.titlecont{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+
+.closeButton{
+    margin: 0.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 0.1rem;
+    background-color: rgba(231, 129, 129, 0.589);
+    color:#313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.05rem #696969 solid;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tempDisplay{
+    flex-grow: 2;
+    margin: 0.5rem;
+}
+
+.tempeTitle{
+    display: block;
+}
+
+.temperature{
+    display: block;
+    font-size: x-large;
+    font-weight: 600;
+}
+.weatherIco{
+    flex-grow: 1;
+    padding: 0 1rem;
+    max-width: 7rem;
+}

@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="public/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/logo2.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Weather Web App</h3>
 
@@ -31,6 +31,10 @@
 ## About The Project
 
 This is a little project with educational propurse. Hope it could be a referece for people looking for exercies about the technologies mention on <a href="#built-with">Built With</a> 
+
+<p align="center">
+    <img src="weather.gif" alt="app gif" width="500" height="320">
+</p>
 
 I have marked some issues for myself to investigate/study on as TODO. 
 

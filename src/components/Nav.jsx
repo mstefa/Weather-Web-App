@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom'
 import Styles from './styles/Nav.module.css'
-import logo from '../logo.png'
+import logo from '../logo2.png'
 import SearchBar from './SearchBar.jsx'
 
 export default function Nav(props) {
@@ -14,7 +14,7 @@ export default function Nav(props) {
           </div>
           <div className={Styles.textContainer}>
             <NavLink to= '/'>
-              <span className={Styles.span}> Wheather Simple APP</span>
+              <span className={Styles.span}> Wheather APP</span>
             </NavLink>
             <NavLink to= '/about'>
               <span>About</span>

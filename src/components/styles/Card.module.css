@@ -3,7 +3,7 @@
     border-radius: 0.5rem;
     border: 0.05rem rgb(165, 163, 163) solid;
     margin: 1rem;
-    background: linear-gradient(150deg, #acc2eb,  #77819c, #dca1e7);
+    background: linear-gradient(150deg, #acc2ebbd,  #77819cb2, #dda1e7af);
     background-size: 400% 300%;
     animation: BgGradient 10s ease infinite;
     z-index: 10;
@@ -39,7 +39,7 @@ a:link {
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 0.1rem;
-    background-color: rgba(231, 129, 129, 0.589);
+    background-color: rgba(224, 52, 52, 0.884);
     color:#313131;
     display: flex;
     align-items: center;

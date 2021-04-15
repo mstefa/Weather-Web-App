@@ -1,0 +1,20 @@
+.container{
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  max-width: 35rem;
+  background-color: rgba(240, 252, 255, 0.5);  
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+a{
+  font-weight: bold;
+  color: black;
+
+}
+a:hover{
+  color: blueviolet;
+}

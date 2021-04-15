@@ -8,15 +8,15 @@ export default function Nav(props) {
   return (
       <nav className={Styles.navBar}>
           <div className={Styles.imgContainer}>
-          <NavLink to= '/'>
+          <NavLink to= '/Weather-Web-App/'>
             <img src ={logo} alt='logo MS' className={Styles.img}></img>
           </NavLink>
           </div>
           <div className={Styles.textContainer}>
-            <NavLink to= '/'>
+            <NavLink to= '/Weather-Web-App/'>
               <span className={Styles.span}> Wheather APP</span>
             </NavLink>
-            <NavLink to= '/about'>
+            <NavLink to= '/Weather-Web-App/about'>
               <span>About</span>
             </NavLink>
           </div>

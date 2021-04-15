@@ -4,8 +4,10 @@ import Cards from './components/Cards.jsx';
 import Nav from './components/Nav.jsx';
 import City from './components/City.jsx'
 import About from './components/About.jsx'
-import apikey from './config.js'
+// import apikey from './config.js'
 import './App.css';
+
+// console.log(process.env.REACT_APP_API)
 
 export default function App() {
 
@@ -13,7 +15,7 @@ const [cities, setCities] = useState([]);
 
   let onSearch = (ciudad) =>{
     // API REQUEST
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apikey}&units=metric`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_API}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
@@ -46,8 +48,6 @@ const [cities, setCities] = useState([]);
     setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
 
-  console.log(cities.find(element => element.id === 3435910))
-
   useEffect( ()=>onSearch('buenos aires'),[]);
 
   // match.params.ciudadId
@@ -55,21 +55,21 @@ const [cities, setCities] = useState([]);
   return (
     <div className="App">
       <Route 
-        path='/'
+        path='/Weather-Web-App/'
         render={() =>   
           <Nav onSearch={onSearch} />
       }/>
       <Route 
-        exact path='/'
+        exact path='/Weather-Web-App/'
         render={() =>   
           <Cards cities={cities} onClose={onClose}/>
       }/>
       <Route
-        path ='/about'
+        path ='/Weather-Web-App/about'
         component={About}
       />
     <Route
-      exact path='/ciudad/:ciudadId'
+      exact path='/Weather-Web-App/ciudad/:ciudadId'
       render ={({match}) => <City
           citydetail ={cities.find(element => element.id === parseInt(match.params.ciudadId))}
           // citydetail = {cities.filter(c => c.id === parseInt(match.params.ciudadId))}

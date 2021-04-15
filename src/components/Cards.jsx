@@ -3,9 +3,7 @@ import Card from './Card.jsx'
 import Styles from './styles/Cards.module.css'
 
 export default function Cards(props) {
-  // acá va tu código
-  // tip, podés usar un map
-  
+
   return (
     <div>
       <div className={Styles.container}>
